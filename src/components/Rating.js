@@ -8,7 +8,7 @@ export const Rating = ({ rating }) => {
         const value = i + 1;
         const isHalfValue = rating - i === 0.5;
         const Book = () => {
-          if (rating > value) {
+          if (rating >= value) {
             return <Box as={BsBookFill} size={24} color={"dark"} />;
           } else if (isHalfValue) {
             return <Box as={BsBookHalf} size={24} color={"dark"} />;
